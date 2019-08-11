@@ -1,0 +1,4 @@
+[
+  { "ParameterKey": "BillsTopicEmailEndpoint",                  "ParameterValue": "aws-bills-p@dxcp.technology" },
+  { "ParameterKey": "BillsSMSTopicSMSEndpoint",                 "ParameterValue": "+18056520000" }
+]

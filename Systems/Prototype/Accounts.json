@@ -1,0 +1,14 @@
+[
+  { "Name": "Organization", "LongName": "DXCP Organization", "Alias": "dxcp",  "Id": "000000000000", "Default": false },
+  { "Name": "Management",   "LongName": "DXCP Management",   "Alias": "dxcpm", "Id": "000000000001", "Default": false },
+  { "Name": "Identity",     "LongName": "DXCP Identity",     "Alias": "dxcpi", "Id": "000000000002", "Default": false },
+  { "Name": "Log",          "LongName": "DXCP Log",          "Alias": "dxcpl", "Id": "000000000003", "Default": false },
+  { "Name": "Recovery",     "LongName": "DXCP Recovery",     "Alias": "dxcpr", "Id": "000000000004", "Default": false },
+  { "Name": "Build",        "LongName": "DXCP Build",        "Alias": "dxcpb", "Id": "000000000005", "Default": false },
+  { "Name": "Core",         "LongName": "DXCP Core",         "Alias": "dxcpc", "Id": "000000000006", "Default": false },
+  { "Name": "Production",   "LongName": "DXCP Production",   "Alias": "dxcpp", "Id": "000000000007", "Default": true  },
+  { "Name": "Staging",      "LongName": "DXCP Staging",      "Alias": "dxcps", "Id": "000000000008", "Default": false },
+  { "Name": "Testing",      "LongName": "DXCP Testing",      "Alias": "dxcpt", "Id": "000000000009", "Default": false },
+  { "Name": "Development",  "LongName": "DXCP Development",  "Alias": "dxcpd", "Id": "000000000010", "Default": false },
+  { "Name": "Jumpstart",    "LongName": "DXCP Jumpstart",    "Alias": "dxcpj", "Id": "000000000011", "Default": false }
+]

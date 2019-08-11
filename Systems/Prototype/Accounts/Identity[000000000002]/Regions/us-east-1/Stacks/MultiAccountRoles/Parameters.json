@@ -1,0 +1,13 @@
+[
+  { "ParameterKey": "ManagementAccount",                        "ParameterValue": "000000000001" },
+  { "ParameterKey": "IdentityAccount",                          "ParameterValue": "000000000002" },
+  { "ParameterKey": "LogAccount",                               "ParameterValue": "000000000003" },
+  { "ParameterKey": "RecoveryAccount",                          "ParameterValue": "000000000004" },
+  { "ParameterKey": "BuildAccount",                             "ParameterValue": "000000000005" },
+  { "ParameterKey": "CoreAccount",                              "ParameterValue": "000000000006" },
+  { "ParameterKey": "ProductionAccount",                        "ParameterValue": "000000000007" },
+  { "ParameterKey": "StagingAccount",                           "ParameterValue": "000000000008" },
+  { "ParameterKey": "TestingAccount",                           "ParameterValue": "000000000009" },
+  { "ParameterKey": "DevelopmentAccount",                       "ParameterValue": "000000000010" },
+  { "ParameterKey": "JumpstartAccount",                         "ParameterValue": "000000000011" }
+]

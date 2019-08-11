@@ -1,0 +1,4 @@
+[
+  { "ParameterKey": "Name",                                     "ParameterValue": "Production" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpp" }
+]

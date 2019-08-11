@@ -1,0 +1,19 @@
+[
+  { "ParameterKey": "Name",                                     "ParameterValue": "Staging" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcps" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPS" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Staging-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Staging-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Staging-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Staging-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Staging-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Staging-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Staging-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Staging-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Staging-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Staging-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Staging-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Staging-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Staging-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Staging-PublicHostedZone" }
+]

@@ -1,0 +1,17 @@
+[
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPD" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Development-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Development-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Development-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Development-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Development-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Development-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Development-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Development-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Development-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Development-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Development-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Development-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Development-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Development-PublicHostedZone" }
+]

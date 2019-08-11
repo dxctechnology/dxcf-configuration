@@ -1,0 +1,16 @@
+[
+  { "Name": "Atlanta",         "Code": "atl", "Type": "City" },
+  { "Name": "Boston",          "Code": "bos", "Type": "City" },
+  { "Name": "Chicago",         "Code": "chi", "Type": "City" },
+  { "Name": "Dallas",          "Code": "dfw", "Type": "City" },
+  { "Name": "Denver",          "Code": "den", "Type": "City" },
+  { "Name": "Houston",         "Code": "hou", "Type": "City" },
+  { "Name": "LasVegas",        "Code": "las", "Type": "City" },
+  { "Name": "Miami",           "Code": "mia", "Type": "City" },
+  { "Name": "Phoenix",         "Code": "phx", "Type": "City" },
+  { "Name": "Portland",        "Code": "pdx", "Type": "City" },
+  { "Name": "Raleigh",         "Code": "rdu", "Type": "City" },
+  { "Name": "SanJose",         "Code": "sjc", "Type": "City" },
+  { "Name": "SantaBarbara",    "Code": "sba", "Type": "City" },
+  { "Name": "Washington",      "Code": "was", "Type": "City" }
+]

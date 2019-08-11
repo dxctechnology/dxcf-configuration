@@ -1,0 +1,5 @@
+[
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "SantaBarbara-PublicHostedZone" },
+  { "ParameterKey": "ValidationTXTValue",                       "ParameterValue": "" },
+  { "ParameterKey": "UseCustomURLs",                            "ParameterValue": "false" }
+]

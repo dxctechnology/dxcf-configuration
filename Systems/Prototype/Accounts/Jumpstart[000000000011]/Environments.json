@@ -1,0 +1,10 @@
+[
+  { "Name": "Build",       "Code": "b", "Active": true,  "Default": false },
+  { "Name": "Core",        "Code": "c", "Active": true,  "Default": false },
+  { "Name": "Development", "Code": "d", "Active": true,  "Default": false },
+  { "Name": "Identity",    "Code": "i", "Active": true,  "Default": false },
+  { "Name": "Log",         "Code": "l", "Active": true,  "Default": false },
+  { "Name": "Production",  "Code": "p", "Active": true,  "Default": true  },
+  { "Name": "Staging",     "Code": "s", "Active": true,  "Default": false },
+  { "Name": "Testing",     "Code": "t", "Active": true,  "Default": false }
+]

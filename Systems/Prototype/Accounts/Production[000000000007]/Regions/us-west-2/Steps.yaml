@@ -1,0 +1,154 @@
+Region:
+  Name: us-west-2
+  Type: Workload
+  Phases:
+    - Name: Region-Baseline
+      Type: Baseline
+      Steps:
+        - Name: TagDefaultResources
+          Type: Script
+          Script: common-tag-default-resources
+        - Name: Topics
+          Type: Stack
+          Stack: Topics
+          Template: Common-Topics
+        - Name: TopicsSync
+          Type: Sync
+        - Name: Subscriptions
+          Type: Stack
+          Stack: Subscriptions
+          Template: Common-Subscriptions
+        - Name: SubscriptionsSync
+          Type: Sync
+        - Name: Buckets
+          Type: Stack
+          Stack: Buckets
+          Template: Common-Buckets
+        - Name: BucketsSync
+          Type: Sync
+        - Name: BuildBuckets
+          Type: Stack
+          Stack: BuildBuckets
+          Template: Common-BuildBuckets
+        - Name: LogBuckets
+          Type: Stack
+          Stack: LogBuckets
+          Template: Common-LogBuckets
+        - Name: OtherBucketsSync
+          Type: Sync
+        - Name: AMIFunctions
+          Type: Stack
+          Stack: AMIFunctions
+          Template: Common-AMIFunctions
+        - Name: MarketplaceAMIFunctions
+          Type: Stack
+          Stack: MarketplaceAMIFunctions
+          Template: Common-MarketplaceAMIFunctions
+        - Name: PrivateAMIFunctions
+          Type: Stack
+          Stack: PrivateAMIFunctions
+          Template: Common-PrivateAMIFunctions
+        - Name: CIDRFunctions
+          Type: Stack
+          Stack: CIDRFunctions
+          Template: Common-CIDRFunctions
+        - Name: TagFunctions
+          Type: Stack
+          Stack: TagFunctions
+          Template: Common-TagFunctions
+        - Name: IdentifierFunctions
+          Type: Stack
+          Stack: IdentifierFunctions
+          Template: Common-IdentifierFunctions
+        - Name: ScheduleFunctions
+          Type: Stack
+          Stack: ScheduleFunctions
+          Template: Common-ScheduleFunctions
+        - Name: DomainFunctions
+          Type: Stack
+          Stack: DomainFunctions
+          Template: Common-DomainFunctions
+        - Name: DirectoryFunctions
+          Type: Stack
+          Stack: DirectoryFunctions
+          Template: Common-DirectoryFunctions
+        - Name: MultiAccountFunctions
+          Type: Stack
+          Stack: MultiAccountFunctions
+          Template: Common-MultiAccountFunctions
+        - Name: FunctionsSync
+          Type: Sync
+    - Name: Region-Domain
+      Type: Domain
+      Steps:
+        - Name: PublicHostedZone
+          Type: Stack
+          Stack: Production-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: PublicHostedZoneSync
+          Type: Sync
+        - Name: PublicGSuiteRecordSets
+          Type: Stack
+          Stack: Production-PublicGSuiteRecordSets
+          Template: Common-PublicGSuiteRecordSets
+        - Name: PublicSESRecordSets
+          Type: Stack
+          Stack: Production-PublicSESRecordSets
+          Template: Common-PublicSESRecordSets
+        - Name: PublicRecordSetsSync
+          Type: Sync
+    - Name: Region-Network-VPC
+      Type: Network-VPC
+      Steps:
+        - Name: VPC
+          Type: Stack
+          Stack: Production-VPC
+          Template: Environment-VPC
+        - Name: VPCSync
+          Type: Sync
+        - Name: NetworkAcls
+          Type: Stack
+          Stack: Production-NetworkAcls
+          Template: Environment-NetworkAcls
+    - Name: Region-Network-VPC-Peering
+      Type: Network-VPC-Peering
+      Steps:
+        - Name: CoreVPCPeeringConnection
+          Type: Stack
+          Stack: Production-CoreVPCPeeringConnection
+          Template: Common-VPCPeeringConnection
+        - Name: DevelopmentVPCPeeringConnection
+          Type: Stack
+          Stack: Production-DevelopmentVPCPeeringConnection
+          Template: Common-VPCPeeringConnection
+        - Name: VPCPeeringConnectionSync
+          Type: Sync
+    - Name: Region-Utilities
+      Type: Utilities
+      Steps:
+        - Name: DirectoryService
+          Type: Stack
+          Stack: Production-DirectoryService
+          Template: Utility-DirectoryService
+          Condition: ConfigureDirectoryService
+        - Name: ActiveDirectory
+          Type: Stack
+          Stack: Production-ActiveDirectory
+          Template: Utility-ActiveDirectory
+          Condition: ConfigureActiveDirectory
+        - Name: DirectorySync
+          Type: Sync
+        - Name: OpenVPN
+          Type: Stack
+          Stack: Production-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: LinuxBastions
+          Type: Stack
+          Stack: Production-LinuxBastions
+          Template: Utility-LinuxBastions
+          Condition: ConfigureLinuxBastions
+        - Name: WindowsBastions
+          Type: Stack
+          Stack: Production-WindowsBastions
+          Template: Utility-WindowsBastions
+          Condition: ConfigureWindowsBastions

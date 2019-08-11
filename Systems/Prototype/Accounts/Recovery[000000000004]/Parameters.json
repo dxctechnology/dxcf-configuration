@@ -1,0 +1,19 @@
+[
+  { "ParameterKey": "Name",                                     "ParameterValue": "Recovery" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpr" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPR" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Recovery-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Recovery-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Recovery-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Recovery-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Recovery-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Recovery-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Recovery-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Recovery-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Recovery-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Recovery-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Recovery-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Recovery-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Recovery-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Recovery-PublicHostedZone" }
+]
