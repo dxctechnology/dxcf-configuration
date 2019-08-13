@@ -22,4 +22,8 @@ overall functionality
   Contains scripts written in bash or PowerShell to implement various aspects of complex cfn-init
   automation logic, in a manner similar to AWS QuickStarts.
 - **DXCF Framework Configuration Example ([dxcf-configuration](https://github.com/dxctechnology/dxcf-configuration))** -
-  Contains the configuration of the DXC Framework as used by an example Prototype System. This data uses fake Account Numbers and non-existant email addresses.
+  Contains the configuration of the DXC Framework as used by an example Prototype System. This data uses fake Account Numbers and non-existent email addresses.
+
+### License
+
+DXCF Configuration is [MIT licensed](./LICENSE).
