@@ -1,6 +1,0 @@
-[
-  { "ParameterKey": "AdministratorsTopicEmailEndpoint",         "ParameterValue": "aws-administrators@dxcp.technology" },
-  { "ParameterKey": "ManagersTopicEmailEndpoint",               "ParameterValue": "aws-managers@dxcp.technology" },
-  { "ParameterKey": "DevelopersTopicEmailEndpoint",             "ParameterValue": "aws-developers@dxcp.technology" },
-  { "ParameterKey": "UsersTopicEmailEndpoint",                  "ParameterValue": "aws-users@dxcp.technology" }
-]

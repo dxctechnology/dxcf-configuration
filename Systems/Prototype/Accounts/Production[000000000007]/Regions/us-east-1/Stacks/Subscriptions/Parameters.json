@@ -1,6 +1,0 @@
-[
-  { "ParameterKey": "EventsTopicEmailEndpoint",                 "ParameterValue": "aws-events-p@dxcp.technology" },
-  { "ParameterKey": "EventsSMSTopicSMSEndpoint",                "ParameterValue": "+18056520000" },
-  { "ParameterKey": "AlarmsTopicEmailEndpoint",                 "ParameterValue": "aws-alarms-p@dxcp.technology" },
-  { "ParameterKey": "AlarmsSMSTopicSMSEndpoint",                "ParameterValue": "+18056520000" }
-]

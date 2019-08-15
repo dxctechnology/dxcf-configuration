@@ -1,7 +1,0 @@
-[
-  { "ParameterKey": "ProviderName",                             "ParameterValue": "dxcp.okta.com" },
-  { "ParameterKey": "ProviderType",                             "ParameterValue": "okta" },
-  { "ParameterKey": "ProviderMetadataUrl",                      "ParameterValue": "https://dxcp.okta.com/app/michaeljcrawford/sso/saml/metadata" },
-  { "ParameterKey": "ProviderAccessMethod",                     "ParameterValue": "child" },
-  { "ParameterKey": "ProviderMasterAccount",                    "ParameterValue": "000000000000" }
-]
