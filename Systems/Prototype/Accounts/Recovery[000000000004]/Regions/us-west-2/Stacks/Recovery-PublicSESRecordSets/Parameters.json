@@ -1,5 +1,4 @@
 [
-  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Recovery-PublicHostedZone" },
   { "ParameterKey": "ValidationTXTValue",                       "ParameterValue": "" },
   { "ParameterKey": "DomainKey1Value",                          "ParameterValue": "" },
   { "ParameterKey": "DomainKey2Value",                          "ParameterValue": "" },

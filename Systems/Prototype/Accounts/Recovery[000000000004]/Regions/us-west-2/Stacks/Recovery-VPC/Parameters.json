@@ -1,5 +1,4 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Recovery" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.8.0/24" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "r.dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "r.ad.dxcp.technology" },

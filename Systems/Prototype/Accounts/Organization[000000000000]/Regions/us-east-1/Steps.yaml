@@ -85,7 +85,7 @@ Region:
       Steps:
         - Name: TagDefaultResources
           Type: Script
-          Script: common-tag-default-resources
+          Script: dxcf-tag-default-resources
         - Name: Topics
           Type: Stack
           Stack: Topics
@@ -126,6 +126,12 @@ Region:
           Template: Common-LogBuckets
         - Name: OtherBucketsSync
           Type: Sync
+        - Name: CloudFormationCustomResourceLayers
+          Type: Stack
+          Stack: CloudFormationCustomResourceLayers
+          Template: Common-CloudFormationCustomResourceLayers
+        - Name: LayersSync
+          Type: Sync
         - Name: AMIFunctions
           Type: Stack
           Stack: AMIFunctions
@@ -150,6 +156,10 @@ Region:
           Type: Stack
           Stack: IdentifierFunctions
           Template: Common-IdentifierFunctions
+        - Name: CloudWatchEventDomainFunctions
+          Type: Stack
+          Stack: CloudWatchEventDomainFunctions
+          Template: Common-CloudWatchEventDomainFunctions
         - Name: ScheduleFunctions
           Type: Stack
           Stack: ScheduleFunctions
@@ -186,4 +196,32 @@ Region:
           Stack: Organization-PublicSESRecordSets
           Template: Common-PublicSESRecordSets
         - Name: PublicRecordSetsSync
+          Type: Sync
+        - Name: SantaBarbara-PublicHostedZone
+          Type: Stack
+          Stack: SantaBarbara-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: SanJose-PublicHostedZone
+          Type: Stack
+          Stack: SanJose-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Location-PublicHostedZoneSync
+          Type: Sync
+        - Name: SantaBarbara-PublicGSuiteRecordSets
+          Type: Stack
+          Stack: SantaBarbara-PublicGSuiteRecordSets
+          Template: Common-PublicGSuiteRecordSets
+        - Name: SantaBarbara-PublicSESRecordSets
+          Type: Stack
+          Stack: SantaBarbara-PublicSESRecordSets
+          Template: Common-PublicSESRecordSets
+        - Name: SanJose-PublicGSuiteRecordSets
+          Type: Stack
+          Stack: SanJose-PublicGSuiteRecordSets
+          Template: Common-PublicGSuiteRecordSets
+        - Name: SanJose-PublicSESRecordSets
+          Type: Stack
+          Stack: SanJose-PublicSESRecordSets
+          Template: Common-PublicSESRecordSets
+        - Name: Location-PublicRecordSetsSync
           Type: Sync

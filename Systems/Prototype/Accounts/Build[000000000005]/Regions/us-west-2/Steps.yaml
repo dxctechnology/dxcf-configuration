@@ -7,7 +7,7 @@ Region:
       Steps:
         - Name: TagDefaultResources
           Type: Script
-          Script: common-tag-default-resources
+          Script: dxcf-tag-default-resources
         - Name: Topics
           Type: Stack
           Stack: Topics
@@ -36,6 +36,12 @@ Region:
           Template: Common-LogBuckets
         - Name: OtherBucketsSync
           Type: Sync
+        - Name: CloudFormationCustomResourceLayers
+          Type: Stack
+          Stack: CloudFormationCustomResourceLayers
+          Template: Common-CloudFormationCustomResourceLayers
+        - Name: LayersSync
+          Type: Sync
         - Name: AMIFunctions
           Type: Stack
           Stack: AMIFunctions
@@ -60,6 +66,10 @@ Region:
           Type: Stack
           Stack: IdentifierFunctions
           Template: Common-IdentifierFunctions
+        - Name: CloudWatchEventDomainFunctions
+          Type: Stack
+          Stack: CloudWatchEventDomainFunctions
+          Template: Common-CloudWatchEventDomainFunctions
         - Name: ScheduleFunctions
           Type: Stack
           Stack: ScheduleFunctions
@@ -129,13 +139,9 @@ Region:
           Type: Stack
           Stack: Build-OpenVPNAS
           Template: Utility-OpenVPNAS
-        - Name: LinuxBastions
-          Type: Stack
-          Stack: Build-LinuxBastions
-          Template: Utility-LinuxBastions
-          Condition: ConfigureLinuxBastions
         - Name: WindowsBastions
           Type: Stack
           Stack: Build-WindowsBastions
           Template: Utility-WindowsBastions
-          Condition: ConfigureWindowsBastions
+        - Name: RemoteAccessSync
+          Type: Sync

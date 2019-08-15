@@ -1,4 +1,3 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Management" },
   { "ParameterKey": "PublicDomain",                             "ParameterValue": "m.us-west-2.dxcp.technology" }
 ]

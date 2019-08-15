@@ -1,5 +1,4 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Build" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.60.0/23" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "b.dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "b.ad.dxcp.technology" },

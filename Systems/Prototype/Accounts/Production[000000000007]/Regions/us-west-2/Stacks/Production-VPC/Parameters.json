@@ -1,5 +1,4 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Production" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.0.0/21" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "ad.dxcp.technology" },

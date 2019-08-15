@@ -1,9 +1,8 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Log" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.62.0/24" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "l.dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "l.ad.dxcp.technology" },
-  { "ParameterKey": "DirectoryNetBIOSDomain",                   "ParameterValue": "mjcl" },
+  { "ParameterKey": "DirectoryNetBIOSDomain",                   "ParameterValue": "dxcpl" },
   { "ParameterKey": "UsePrivateHostedZone",                     "ParameterValue": "true" },
   { "ParameterKey": "UseNatGateway",                            "ParameterValue": "false" },
   { "ParameterKey": "UseVPNGateway",                            "ParameterValue": "true" },

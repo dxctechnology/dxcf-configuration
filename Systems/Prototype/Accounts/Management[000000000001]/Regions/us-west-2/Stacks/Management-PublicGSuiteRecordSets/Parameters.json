@@ -1,5 +1,4 @@
 [
-  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Management-PublicHostedZone" },
   { "ParameterKey": "ValidationTXTValue",                       "ParameterValue": "" },
   { "ParameterKey": "UseCustomURLs",                            "ParameterValue": "false" }
 ]
