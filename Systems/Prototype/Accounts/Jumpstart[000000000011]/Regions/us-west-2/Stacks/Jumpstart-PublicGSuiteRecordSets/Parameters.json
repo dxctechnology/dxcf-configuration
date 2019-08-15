@@ -1,5 +1,0 @@
-[
-  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Jumpstart-PublicHostedZone" },
-  { "ParameterKey": "ValidationTXTValue",                       "ParameterValue": "" },
-  { "ParameterKey": "UseCustomURLs",                            "ParameterValue": "false" }
-]

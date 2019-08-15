@@ -85,7 +85,7 @@ Region:
       Steps:
         - Name: TagDefaultResources
           Type: Script
-          Script: common-tag-default-resources
+          Script: dxcf-tag-default-resources
         - Name: Topics
           Type: Stack
           Stack: Topics
@@ -126,6 +126,12 @@ Region:
           Template: Common-LogBuckets
         - Name: OtherBucketsSync
           Type: Sync
+        - Name: CloudFormationCustomResourceLayers
+          Type: Stack
+          Stack: CloudFormationCustomResourceLayers
+          Template: Common-CloudFormationCustomResourceLayers
+        - Name: LayersSync
+          Type: Sync
         - Name: AMIFunctions
           Type: Stack
           Stack: AMIFunctions
@@ -150,6 +156,10 @@ Region:
           Type: Stack
           Stack: IdentifierFunctions
           Template: Common-IdentifierFunctions
+        - Name: CloudWatchEventDomainFunctions
+          Type: Stack
+          Stack: CloudWatchEventDomainFunctions
+          Template: Common-CloudWatchEventDomainFunctions
         - Name: ScheduleFunctions
           Type: Stack
           Stack: ScheduleFunctions
@@ -162,9 +172,50 @@ Region:
           Type: Stack
           Stack: DirectoryFunctions
           Template: Common-DirectoryFunctions
-        - Name: MultiAccountFunctions
-          Type: Stack
-          Stack: MultiAccountFunctions
-          Template: Common-MultiAccountFunctions
         - Name: FunctionsSync
           Type: Sync
+    - Name: Region-Domain
+      Type: Domain
+      Steps:
+        - Name: Identity-PublicHostedZone
+          Type: Stack
+          Stack: Identity-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Identity-PublicHostedZoneSync
+          Type: Sync
+    - Name: Region-Network-VPC
+      Type: Network-VPC
+      Steps:
+        - Name: Identity-VPC
+          Type: Stack
+          Stack: Identity-VPC
+          Template: Identity-VPC
+        - Name: VPCSync
+          Type: Sync
+        - Name: Identity-NetworkAcls
+          Type: Stack
+          Stack: Identity-NetworkAcls
+          Template: Identity-NetworkAcls
+    - Name: Region-Utilities
+      Type: Utilities
+      Steps:
+        - Name: Identity-DirectoryService
+          Type: Stack
+          Stack: Identity-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: DirectorySync
+          Type: Sync
+        - Name: Identity-DUO
+          Type: Stack
+          Stack: Identity-DUO
+          Template: Utility-DOU
+        - Name: SSOSync
+          Type: Sync
+        - Name: Identity-OpenVPN
+          Type: Stack
+          Stack: Identity-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Identity-WindowsBastions
+          Type: Stack
+          Stack: Identity-WindowsBastions
+          Template: Utility-WindowsBastions

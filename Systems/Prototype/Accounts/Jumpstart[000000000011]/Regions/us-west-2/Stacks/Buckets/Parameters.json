@@ -1,4 +1,3 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Core" },
-  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpj" }
+  { "ParameterKey": "Name",                                     "ParameterValue": "Core" }
 ]

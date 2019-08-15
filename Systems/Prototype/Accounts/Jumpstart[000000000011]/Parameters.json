@@ -1,3 +1,8 @@
 [
-  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPJ" }
+  { "ParameterKey": "Name",                                     "ParameterValue": "Jumpstart" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpj" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPJ" },
+  { "ParameterKey": "ProviderMetadataUrl",                      "ParameterValue": "https://dxcp.okta.com/app/michaeljcrawfordjump/sso/saml/metadata" },
+  { "ParameterKey": "ProviderAccessMethod",                     "ParameterValue": "master" },
+  { "ParameterKey": "ProviderMasterAccount",                    "ParameterValue": "" }
 ]
