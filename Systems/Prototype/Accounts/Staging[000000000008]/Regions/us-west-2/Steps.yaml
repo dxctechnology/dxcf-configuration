@@ -5,6 +5,15 @@ Region:
     - Name: Region-Baseline
       Type: Baseline
       Steps:
+        - Name: BaselineFunctions
+          Type: Stack
+          Stack: BaselineFunctions
+          Template: Baseline-BaselineFunctions
+        - Name: BaselineFunctionsSync
+          Type: Sync
+    - Name: Region-Common
+      Type: Common
+      Steps:
         - Name: TagDefaultResources
           Type: Script
           Script: dxcf-tag-default-resources

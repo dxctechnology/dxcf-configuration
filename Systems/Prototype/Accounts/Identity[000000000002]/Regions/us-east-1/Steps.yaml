@@ -2,8 +2,17 @@ Region:
   Name: us-east-1
   Type: Global
   Phases:
-    - Name: Global-Baseline
+    - Name: Region-Baseline
       Type: Baseline
+      Steps:
+        - Name: BaselineFunctions
+          Type: Stack
+          Stack: BaselineFunctions
+          Template: Baseline-BaselineFunctions
+        - Name: BaselineFunctionsSync
+          Type: Sync
+    - Name: Global-Billing
+      Type: Billing
       Steps:
         - Name: BillingTopics
           Type: Stack
@@ -15,6 +24,10 @@ Region:
           Type: Stack
           Stack: BillingSubscriptions
           Template: Billing-BillingSubscriptions
+        - Name: BillingCustomSubscriptions
+          Type: Stack
+          Stack: BillingCustomSubscriptions
+          Template: Billing-BillingCustomSubscriptions
         - Name: BillingSubscriptionsSync
           Type: Sync
         - Name: BillingAlarms
@@ -80,8 +93,8 @@ Region:
           Template: Identity-IdentityProvider
         - Name: IdentityProviderSync
           Type: Sync
-    - Name: Region-Baseline
-      Type: Baseline
+    - Name: Region-Common
+      Type: Common
       Steps:
         - Name: TagDefaultResources
           Type: Script
