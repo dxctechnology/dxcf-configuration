@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Recovery" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Recovery" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpr" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Recovery" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPR" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Recovery-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Recovery-Hadoop-Database" },

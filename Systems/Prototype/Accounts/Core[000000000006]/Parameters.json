@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Core" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Core" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpc" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Core" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPC" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Core-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Core-Hadoop-Database" },

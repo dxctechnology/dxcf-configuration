@@ -1,5 +1,5 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Log" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Log" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.62.0/24" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "l.dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "l.ad.dxcp.technology" },

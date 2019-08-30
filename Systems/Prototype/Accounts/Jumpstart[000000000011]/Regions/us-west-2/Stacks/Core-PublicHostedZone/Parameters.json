@@ -1,4 +1,4 @@
 [
-  { "ParameterKey": "Core",                                     "ParameterValue": "Core" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Core" },
   { "ParameterKey": "PublicDomain",                             "ParameterValue": "c.us-west-2.dxcp.technology" }
 ]

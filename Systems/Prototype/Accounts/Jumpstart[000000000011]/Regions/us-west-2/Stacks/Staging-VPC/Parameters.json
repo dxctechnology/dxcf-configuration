@@ -1,5 +1,5 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Staging" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Staging" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.16.0/21" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "s.dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "s.ad.dxcp.technology" },

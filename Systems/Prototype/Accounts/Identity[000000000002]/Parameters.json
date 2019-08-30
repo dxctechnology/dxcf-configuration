@@ -1,5 +1,6 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Identity" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Identity" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpi" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Identity" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPI" }
 ]

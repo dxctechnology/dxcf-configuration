@@ -1,4 +1,7 @@
 [
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Development" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpd" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Development" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPD" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Development-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Development-Hadoop-Database" },

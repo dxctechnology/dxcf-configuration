@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Build" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Build" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpb" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Build" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPB" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Build-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Build-Hadoop-Database" },

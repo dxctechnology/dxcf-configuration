@@ -1,4 +1,4 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Production" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "production" },
   { "ParameterKey": "PublicDomain",                             "ParameterValue": "us-west-2.dxcp.technology" }
 ]

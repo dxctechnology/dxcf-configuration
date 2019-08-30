@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Staging" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Staging" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcps" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Staging" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPS" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Staging-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Staging-Hadoop-Database" },

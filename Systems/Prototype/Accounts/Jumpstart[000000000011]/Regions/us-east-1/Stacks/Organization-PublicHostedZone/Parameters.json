@@ -1,4 +1,4 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Organization" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Organization" },
   { "ParameterKey": "PublicDomain",                             "ParameterValue": "dxcp.technology" }
 ]

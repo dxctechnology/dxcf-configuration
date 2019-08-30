@@ -1,4 +1,5 @@
 [
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Identity" },
   { "ParameterKey": "Network",                                  "ParameterValue": "10.240.63.0/24" },
   { "ParameterKey": "PrivateDomain",                            "ParameterValue": "i.dxcp.technology" },
   { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "i.ad.dxcp.technology" },

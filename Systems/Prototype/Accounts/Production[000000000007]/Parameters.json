@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Production" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Production" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpp" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Production" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPP" },
   { "ParameterKey": "BillsTopicEmailEndpoint",                  "ParameterValue": "aws-bills-p@dxcp.technology" },
   { "ParameterKey": "UrgentBillsTopicEmailEndpoint",            "ParameterValue": "aws-managers-p@dxcp.technology" },
@@ -14,5 +15,5 @@
   { "ParameterKey": "AdministratorsTopicEmailEndpoint",         "ParameterValue": "aws-administrators-p@dxcp.technology" },
   { "ParameterKey": "ManagersTopicEmailEndpoint",               "ParameterValue": "aws-managers-p@dxcp.technology" },
   { "ParameterKey": "DevelopersTopicEmailEndpoint",             "ParameterValue": "aws-developers-p@dxcp.technology" },
-  { "ParameterKey": "UsersTopicEmailEndpoint",                  "ParameterValue": "aws-users-p@dxcp.technology" },
+  { "ParameterKey": "UsersTopicEmailEndpoint",                  "ParameterValue": "aws-users-p@dxcp.technology" }
 ]

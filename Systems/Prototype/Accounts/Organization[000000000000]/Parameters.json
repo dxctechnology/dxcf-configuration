@@ -1,5 +1,6 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Organization" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Organization" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcp" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Organization" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCP" }
 ]

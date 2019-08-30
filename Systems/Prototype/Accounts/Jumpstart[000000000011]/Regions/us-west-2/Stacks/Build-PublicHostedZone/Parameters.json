@@ -1,4 +1,4 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Build" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Build" },
   { "ParameterKey": "PublicDomain",                             "ParameterValue": "b.us-west-2.dxcp.technology" }
 ]

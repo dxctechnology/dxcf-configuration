@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Management" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Management" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpm" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Management" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPM" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Management-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Management-Hadoop-Database" },

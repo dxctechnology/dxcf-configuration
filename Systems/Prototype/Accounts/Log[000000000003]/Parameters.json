@@ -1,6 +1,7 @@
 [
-  { "ParameterKey": "Name",                                     "ParameterValue": "Log" },
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Log" },
   { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpl" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Log" },
   { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPL" },
   { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Log-Vertica-Database" },
   { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Log-Hadoop-Database" },
