@@ -1,0 +1,20 @@
+[
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Testing" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpt" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Testing" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPT" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Testing-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Testing-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Testing-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Testing-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Testing-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Testing-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Testing-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Testing-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Testing-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Testing-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Testing-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Testing-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Testing-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Testing-PublicHostedZone" }
+]

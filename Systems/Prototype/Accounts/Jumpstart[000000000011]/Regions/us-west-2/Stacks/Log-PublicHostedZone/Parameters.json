@@ -1,0 +1,4 @@
+[
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Log" },
+  { "ParameterKey": "PublicDomain",                             "ParameterValue": "l.us-west-2.dxcp.technology" }
+]

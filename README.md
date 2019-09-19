@@ -1,4 +1,4 @@
-# DXC Framework Configuration (Example)
+# DXC Framework Configuration (Prototype)
 Example DXC Framework Configuration used in the CLI as well as in CloudFormation Templates.
 
 This example shows the structure, but should be cloned and modified for each use.
@@ -21,6 +21,9 @@ overall functionality
 - **DXCF Framework Scripts ([dxcf-scripts](https://github.com/dxctechnology/dxcf-scripts))** -
   Contains scripts written in bash or PowerShell to implement various aspects of complex cfn-init
   automation logic, in a manner similar to AWS QuickStarts.
-- **DXCF Framework Configuration Example ([dxcf-config](https://github.com/dxctechnology/dxcf-config))** -
-  *Because of the sensitive nature of the Configuration data, this is not yet Open Source, but we will
-  have an example in place to show structure shortly.*
+- **DXCF Framework Configuration Example ([dxcf-configuration](https://github.com/dxctechnology/dxcf-configuration))** -
+  Contains the configuration of the DXC Framework as used by an example Prototype System. This data uses fake Account Numbers and non-existent email addresses.
+
+### License
+
+DXCF Configuration is [MIT licensed](./LICENSE).

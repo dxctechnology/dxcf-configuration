@@ -1,0 +1,6 @@
+[
+  { "Name": "us-east-1",       "LongName": "US East (N. Virginia)",     "Code": "ue1", "Active": true, "Default": false },
+  { "Name": "us-east-2",       "LongName": "US East (Ohio)",            "Code": "ue2", "Active": true, "Default": false },
+  { "Name": "us-west-2",       "LongName": "US West (Oregon)",          "Code": "uw2", "Active": true, "Default": true  },
+  { "Name": "eu-west-1",       "LongName": "EU (Ireland)",              "Code": "ew1", "Active": true, "Default": false }
+]

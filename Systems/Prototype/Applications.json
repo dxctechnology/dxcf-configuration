@@ -1,0 +1,12 @@
+[
+  { "Name": "Acunetix",                "Code": "acu" },
+  { "Name": "AutoSys",                 "Code": "as" },
+  { "Name": "Hadoop",                  "Code": "had" },
+  { "Name": "Nessus",                  "Code": "nes" },
+  { "Name": "RabbitMQ",                "Code": "rmq" },
+  { "Name": "RStudio",                 "Code": "rs" },
+  { "Name": "SiteScope",               "Code": "ss" },
+  { "Name": "Tableau",                 "Code": "tab" },
+  { "Name": "Talend",                  "Code": "tal" },
+  { "Name": "Vertica",                 "Code": "v" }
+]

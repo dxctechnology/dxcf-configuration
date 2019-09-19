@@ -1,0 +1,4 @@
+[
+  { "ParameterKey": "ProviderAccessMethod",                     "ParameterValue": "master" },
+  { "ParameterKey": "ProviderMasterAccount",                    "ParameterValue": "" }
+]

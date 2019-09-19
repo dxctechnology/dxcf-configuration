@@ -1,0 +1,11 @@
+[
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Staging" },
+  { "ParameterKey": "Network",                                  "ParameterValue": "10.240.16.0/21" },
+  { "ParameterKey": "PrivateDomain",                            "ParameterValue": "s.dxcp.technology" },
+  { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "s.ad.dxcp.technology" },
+  { "ParameterKey": "DirectoryNetBIOSDomain",                   "ParameterValue": "dxcps" },
+  { "ParameterKey": "UsePrivateHostedZone",                     "ParameterValue": "true" },
+  { "ParameterKey": "UseNatGateway",                            "ParameterValue": "false" },
+  { "ParameterKey": "UseVPNGateway",                            "ParameterValue": "true" },
+  { "ParameterKey": "LogRetention",                             "ParameterValue": "90" }
+]

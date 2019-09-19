@@ -1,0 +1,42 @@
+# Not yet to valid initial version, don't use
+Phases:
+  - Name: Region-Baseline
+    Type: Baseline
+    Accounts:
+      - Name: Organization
+        Id: 000000000000
+      - Regions:
+          - Name: us-east-1
+            Type: Global
+  - Name: Region-Domain
+    Type: Domain
+    Accounts:
+      - Name: Organization
+        Id: 000000000000
+      - Regions:
+          - Name: us-east-1
+            Type: Global
+  - Name: Region-Network-VPC
+    Type: Network-VPC
+    Accounts:
+      - Name: Organization
+        Id: 000000000000
+      - Regions:
+          - Name: us-east-1
+            Type: Global
+  - Name: Region-Network-VPC-Peering
+    Type: Network-VPC-Peering
+    Accounts:
+      - Name: Organization
+        Id: 000000000000
+      - Regions:
+          - Name: us-east-1
+            Type: Global
+  - Name: Region-Utilities
+    Type: Utilities
+    Accounts:
+      - Name: Organization
+        Id: 000000000000
+      - Regions:
+          - Name: us-east-1
+            Type: Global

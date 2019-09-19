@@ -1,0 +1,12 @@
+[
+  { "ParameterKey": "UseDynamoDBKey",                           "ParameterValue": "false" },
+  { "ParameterKey": "UseEBSKey",                                "ParameterValue": "true" },
+  { "ParameterKey": "UseElasticFilesystemKey",                  "ParameterValue": "false" },
+  { "ParameterKey": "UseESKey",                                 "ParameterValue": "false" },
+  { "ParameterKey": "UseGlueKey",                               "ParameterValue": "false" },
+  { "ParameterKey": "UseRDSKey",                                "ParameterValue": "false" },
+  { "ParameterKey": "UseRedShiftKey",                           "ParameterValue": "false" },
+  { "ParameterKey": "UseS3Key",                                 "ParameterValue": "true" },
+  { "ParameterKey": "UseSecretsManagerKey",                     "ParameterValue": "true" },
+  { "ParameterKey": "UseSSMKey",                                "ParameterValue": "true" }
+]

@@ -1,0 +1,4 @@
+[
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Staging" },
+  { "ParameterKey": "PublicDomain",                             "ParameterValue": "s.us-west-2.dxcp.technology" }
+]

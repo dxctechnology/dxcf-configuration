@@ -1,0 +1,11 @@
+[
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Build" },
+  { "ParameterKey": "Network",                                  "ParameterValue": "10.240.60.0/23" },
+  { "ParameterKey": "PrivateDomain",                            "ParameterValue": "b.dxcp.technology.com" },
+  { "ParameterKey": "DirectoryDomain",                          "ParameterValue": "b.ad.dxcp.technology.com" },
+  { "ParameterKey": "DirectoryNetBIOSDomain",                   "ParameterValue": "dxcpb" },
+  { "ParameterKey": "UsePrivateHostedZone",                     "ParameterValue": "true" },
+  { "ParameterKey": "UseNatGateway",                            "ParameterValue": "false" },
+  { "ParameterKey": "UseVPNGateway",                            "ParameterValue": "true" },
+  { "ParameterKey": "LogRetention",                             "ParameterValue": "120" }
+]

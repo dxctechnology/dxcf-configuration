@@ -1,0 +1,20 @@
+[
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Build" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpb" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Build" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPB" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Build-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Build-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Build-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Build-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Build-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Build-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Build-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Build-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Build-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Build-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Build-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Build-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Build-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Build-PublicHostedZone" }
+]

@@ -1,0 +1,4 @@
+[
+  { "Name": "verbose",      "Value": true  },
+  { "Name": "monitor",      "Value": true  }
+]

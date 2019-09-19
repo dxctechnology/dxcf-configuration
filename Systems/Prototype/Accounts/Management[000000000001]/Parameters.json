@@ -1,0 +1,20 @@
+[
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Management" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpm" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Management" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPM" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Management-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Management-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Management-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Management-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Management-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Management-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Management-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Management-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Management-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Management-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Management-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Management-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Management-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Management-PublicHostedZone" }
+]

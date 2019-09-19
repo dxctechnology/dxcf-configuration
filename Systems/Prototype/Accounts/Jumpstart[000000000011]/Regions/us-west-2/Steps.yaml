@@ -1,0 +1,286 @@
+Region:
+  Name: us-west-2
+  Type: Workload
+  Phases:
+    - Name: Region-Baseline
+      Type: Baseline
+      Steps:
+        - Name: BaselineFunctions
+          Type: Stack
+          Stack: BaselineFunctions
+          Template: Baseline-BaselineFunctions
+        - Name: BaselineFunctionsSync
+          Type: Sync
+    - Name: Region-Common
+      Type: Common
+      Steps:
+        - Name: TagDefaultResources
+          Type: Script
+          Script: dxcf-tag-default-resources
+        - Name: Topics
+          Type: Stack
+          Stack: Topics
+          Template: Common-Topics
+        - Name: TopicsSync
+          Type: Sync
+        - Name: Subscriptions
+          Type: Stack
+          Stack: Subscriptions
+          Template: Common-Subscriptions
+        - Name: SubscriptionsSync
+          Type: Sync
+        - Name: Buckets
+          Type: Stack
+          Stack: Buckets
+          Template: Common-Buckets
+        - Name: BucketsSync
+          Type: Sync
+        - Name: BuildBuckets
+          Type: Stack
+          Stack: BuildBuckets
+          Template: Common-BuildBuckets
+        - Name: LogBuckets
+          Type: Stack
+          Stack: LogBuckets
+          Template: Common-LogBuckets
+        - Name: OtherBucketsSync
+          Type: Sync
+        - Name: CloudFormationCustomResourceLayers
+          Type: Stack
+          Stack: CloudFormationCustomResourceLayers
+          Template: Common-CloudFormationCustomResourceLayers
+        - Name: LayersSync
+          Type: Sync
+        - Name: AMIFunctions
+          Type: Stack
+          Stack: AMIFunctions
+          Template: Common-AMIFunctions
+        - Name: MarketplaceAMIFunctions
+          Type: Stack
+          Stack: MarketplaceAMIFunctions
+          Template: Common-MarketplaceAMIFunctions
+        - Name: PrivateAMIFunctions
+          Type: Stack
+          Stack: PrivateAMIFunctions
+          Template: Common-PrivateAMIFunctions
+        - Name: CIDRFunctions
+          Type: Stack
+          Stack: CIDRFunctions
+          Template: Common-CIDRFunctions
+        - Name: TagFunctions
+          Type: Stack
+          Stack: TagFunctions
+          Template: Common-TagFunctions
+        - Name: IdentifierFunctions
+          Type: Stack
+          Stack: IdentifierFunctions
+          Template: Common-IdentifierFunctions
+        - Name: CloudWatchEventDomainFunctions
+          Type: Stack
+          Stack: CloudWatchEventDomainFunctions
+          Template: Common-CloudWatchEventDomainFunctions
+        - Name: ScheduleFunctions
+          Type: Stack
+          Stack: ScheduleFunctions
+          Template: Common-ScheduleFunctions
+        - Name: DomainFunctions
+          Type: Stack
+          Stack: DomainFunctions
+          Template: Common-DomainFunctions
+        - Name: DirectoryFunctions
+          Type: Stack
+          Stack: DirectoryFunctions
+          Template: Common-DirectoryFunctions
+        - Name: FunctionsSync
+          Type: Sync
+    - Name: Region-Domain
+      Type: Domain
+      Steps:
+        - Name: Production-PublicHostedZone
+          Type: Stack
+          Stack: Production-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Production-PublicHostedZoneSync
+          Type: Sync
+        - Name: Log-PublicHostedZone
+          Type: Stack
+          Stack: Log-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Core-PublicHostedZone
+          Type: Stack
+          Stack: Core-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Build-PublicHostedZone
+          Type: Stack
+          Stack: Build-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Staging-PublicHostedZone
+          Type: Stack
+          Stack: Staging-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Testing-PublicHostedZone
+          Type: Stack
+          Stack: Testing-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: Development-PublicHostedZone
+          Type: Stack
+          Stack: Development-PublicHostedZone
+          Template: Common-PublicHostedZone
+        - Name: NonProduction-PublicHostedZoneSync
+          Type: Sync
+    - Name: Region-Network-VPC
+      Type: Network-VPC
+      Steps:
+        - Name: Production-VPC
+          Type: Stack
+          Stack: Production-VPC
+          Template: Environment-VPC
+        - Name: Log-VPC
+          Type: Stack
+          Stack: Log-VPC
+          Template: Log-VPC
+        - Name: Core-VPC
+          Type: Stack
+          Stack: Core-VPC
+          Template: Core-VPC
+        - Name: Build-VPC
+          Type: Stack
+          Stack: Build-VPC
+          Template: Build-VPC
+        - Name: Staging-VPC
+          Type: Stack
+          Stack: Staging-VPC
+          Template: Environment-VPC
+        - Name: Testing-VPC
+          Type: Stack
+          Stack: Testing-VPC
+          Template: Environment-VPC
+        - Name: Development-VPC
+          Type: Stack
+          Stack: Development-VPC
+          Template: Environment-VPC
+        - Name: VPCSync
+          Type: Sync
+        - Name: Production-NetworkAcls
+          Type: Stack
+          Stack: Production-NetworkAcls
+          Template: Environment-NetworkAcls
+        - Name: Log-NetworkAcls
+          Type: Stack
+          Stack: Log-NetworkAcls
+          Template: Log-NetworkAcls
+        - Name: Core-NetworkAcls
+          Type: Stack
+          Stack: Core-NetworkAcls
+          Template: Core-NetworkAcls
+        - Name: Build-NetworkAcls
+          Type: Stack
+          Stack: Build-NetworkAcls
+          Template: Build-NetworkAcls
+        - Name: Staging-NetworkAcls
+          Type: Stack
+          Stack: Staging-NetworkAcls
+          Template: Environment-NetworkAcls
+        - Name: Testing-NetworkAcls
+          Type: Stack
+          Stack: Testing-NetworkAcls
+          Template: Environment-NetworkAcls
+        - Name: Development-NetworkAcls
+          Type: Stack
+          Stack: Development-NetworkAcls
+          Template: Environment-NetworkAcls
+        - Name: NetworkAclsSync
+          Type: Sync
+    - Name: Region-Utilities
+      Type: Utilities
+      Steps:
+        - Name: Production-DirectoryService
+          Type: Stack
+          Stack: Production-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: Log-DirectoryService
+          Type: Stack
+          Stack: Log-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: Core-DirectoryService
+          Type: Stack
+          Stack: Core-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: Build-DirectoryService
+          Type: Stack
+          Stack: Build-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: Staging-DirectoryService
+          Type: Stack
+          Stack: Staging-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: Testing-DirectoryService
+          Type: Stack
+          Stack: Testing-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: Production-DirectoryService
+          Type: Stack
+          Stack: Production-DirectoryService
+          Template: Utility-DirectoryService
+        - Name: DirectorySync
+          Type: Sync
+        - Name: Production-OpenVPN
+          Type: Stack
+          Stack: Production-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Log-OpenVPN
+          Type: Stack
+          Stack: Log-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Core-OpenVPN
+          Type: Stack
+          Stack: Core-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Build-OpenVPN
+          Type: Stack
+          Stack: Build-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Staging-OpenVPN
+          Type: Stack
+          Stack: Staging-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Testing-OpenVPN
+          Type: Stack
+          Stack: Testing-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: Production-OpenVPN
+          Type: Stack
+          Stack: Production-OpenVPNAS
+          Template: Utility-OpenVPNAS
+        - Name: OpenVPNSync
+          Type: Sync
+        - Name: Production-WindowsBastions
+          Type: Stack
+          Stack: Production-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: Log-WindowsBastions
+          Type: Stack
+          Stack: Log-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: Core-WindowsBastions
+          Type: Stack
+          Stack: Core-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: Build-WindowsBastions
+          Type: Stack
+          Stack: Build-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: Staging-WindowsBastions
+          Type: Stack
+          Stack: Staging-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: Testing-WindowsBastions
+          Type: Stack
+          Stack: Testing-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: Development-WindowsBastions
+          Type: Stack
+          Stack: Development-WindowsBastions
+          Template: Utility-WindowsBastions
+        - Name: RemoteAccessSync
+          Type: Sync

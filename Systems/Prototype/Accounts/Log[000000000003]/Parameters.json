@@ -1,0 +1,20 @@
+[
+  { "ParameterKey": "AccountName",                              "ParameterValue": "Log" },
+  { "ParameterKey": "AccountAlias",                             "ParameterValue": "dxcpl" },
+  { "ParameterKey": "EnvironmentName",                          "ParameterValue": "Log" },
+  { "ParameterKey": "TopicPrefix",                              "ParameterValue": "DXCPL" },
+  { "ParameterKey": "VerticaDatabaseStackName",                 "ParameterValue": "Log-Vertica-Database" },
+  { "ParameterKey": "HadoopDatabaseStackName",                  "ParameterValue": "Log-Hadoop-Database" },
+  { "ParameterKey": "AutoSysDatabaseStackName",                 "ParameterValue": "Log-AutoSys-Database" },
+  { "ParameterKey": "TikiWikiStackName",                        "ParameterValue": "Log-TikiWiki" },
+  { "ParameterKey": "TikiWikiDatabaseStackName",                "ParameterValue": "Log-TikiWiki-Database" },
+  { "ParameterKey": "GitHubEnterpriseStackName",                "ParameterValue": "Log-GitHubEnterprise" },
+  { "ParameterKey": "DeepSecurityStackName",                    "ParameterValue": "Log-DeepSecurity" },
+  { "ParameterKey": "DUOStackName",                             "ParameterValue": "Log-DUO" },
+  { "ParameterKey": "LinuxBastionsStackName",                   "ParameterValue": "Log-LinuxBastions" },
+  { "ParameterKey": "OpenVPNASStackName",                       "ParameterValue": "Log-OpenVPNAS" },
+  { "ParameterKey": "DirectoryServiceStackName",                "ParameterValue": "Log-DirectoryService" },
+  { "ParameterKey": "NetworkAclsStackName",                     "ParameterValue": "Log-NetworkAcls" },
+  { "ParameterKey": "VPCStackName",                             "ParameterValue": "Log-VPC" },
+  { "ParameterKey": "PublicHostedZoneStackName",                "ParameterValue": "Log-PublicHostedZone" }
+]

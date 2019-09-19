@@ -1,0 +1,193 @@
+Region:
+  Name: us-east-1
+  Type: Global
+  Phases:
+    - Name: Region-Baseline
+      Type: Baseline
+      Steps:
+        - Name: BaselineFunctions
+          Type: Stack
+          Stack: BaselineFunctions
+          Template: Baseline-BaselineFunctions
+        - Name: BaselineFunctionsSync
+          Type: Sync
+    - Name: Global-Billing
+      Type: Billing
+      Steps:
+        - Name: BillingTopics
+          Type: Stack
+          Stack: BillingTopics
+          Template: Billing-BillingTopics
+        - Name: BillingTopicsSync
+          Type: Sync
+        - Name: BillingSubscriptions
+          Type: Stack
+          Stack: BillingSubscriptions
+          Template: Billing-BillingSubscriptions
+        - Name: BillingCustomSubscriptions
+          Type: Stack
+          Stack: BillingCustomSubscriptions
+          Template: Billing-BillingCustomSubscriptions
+        - Name: BillingSubscriptionsSync
+          Type: Sync
+        - Name: BillingAlarms
+          Type: Stack
+          Stack: BillingAlarms
+          Template: Billing-BillingAlarms
+        - Name: BillingAlarmsSync
+          Type: Sync
+    - Name: Global-Identity
+      Type: Identity
+      Steps:
+        - Name: ManagedPolicies
+          Type: Stack
+          Stack: ManagedPolicies
+          Template: Identity-ManagedPolicies
+        - Name: CustomManagedPolicies
+          Type: Stack
+          Stack: CustomManagedPolicies
+          Template: Identity-CustomManagedPolicies
+        - Name: MultiAccountManagedPolicies
+          Type: Stack
+          Stack: MultiAccountManagedPolicies
+          Template: Identity-MultiAccountManagedPolicies
+        - Name: ManagedPoliciesSync
+          Type: Sync
+        - Name: Groups
+          Type: Stack
+          Stack: Groups
+          Template: Identity-Groups
+        - Name: CustomGroups
+          Type: Stack
+          Stack: CustomGroups
+          Template: Identity-CustomGroups
+        - Name: GroupsSync
+          Type: Sync
+        - Name: Users
+          Type: Stack
+          Stack: Users
+          Template: Identity-Users
+        - Name: CustomUsers
+          Type: Stack
+          Stack: CustomUsers
+          Template: Identity-CustomUsers
+        - Name: UsersSync
+          Type: Sync
+        - Name: Roles
+          Type: Stack
+          Stack: Roles
+          Template: Identity-Roles
+        - Name: CustomRoles
+          Type: Stack
+          Stack: CustomRoles
+          Template: Identity-CustomRoles
+        - Name: MultiAccountRoles
+          Type: Stack
+          Stack: MultiAccountRoles
+          Template: Identity-MultiAccountRoles
+        - Name: RolesSync
+          Type: Sync
+        - Name: IdentityProvider
+          Type: Stack
+          Stack: IdentityProvider
+          Template: Identity-IdentityProvider
+        - Name: IdentityProviderSync
+          Type: Sync
+    - Name: Region-Common
+      Type: Common
+      Steps:
+        - Name: TagDefaultResources
+          Type: Script
+          Script: dxcf-tag-default-resources
+        - Name: Topics
+          Type: Stack
+          Stack: Topics
+          Template: Common-Topics
+        - Name: TopicsSync
+          Type: Sync
+        - Name: Subscriptions
+          Type: Stack
+          Stack: Subscriptions
+          Template: Common-Subscriptions
+        - Name: SubscriptionsSync
+          Type: Sync
+        - Name: UserTopics
+          Type: Stack
+          Stack: UserTopics
+          Template: Common-UserTopics
+        - Name: UserTopicsSync
+          Type: Sync
+        - Name: UserSubscriptions
+          Type: Stack
+          Stack: UserSubscriptions
+          Template: Common-UserSubscriptions
+        - Name: UserSubscriptionsSync
+          Type: Sync
+        - Name: Buckets
+          Type: Stack
+          Stack: Buckets
+          Template: Common-Buckets
+        - Name: BucketsSync
+          Type: Sync
+        - Name: BuildBuckets
+          Type: Stack
+          Stack: BuildBuckets
+          Template: Common-BuildBuckets
+        - Name: LogBuckets
+          Type: Stack
+          Stack: LogBuckets
+          Template: Common-LogBuckets
+        - Name: OtherBucketsSync
+          Type: Sync
+        - Name: CloudFormationCustomResourceLayers
+          Type: Stack
+          Stack: CloudFormationCustomResourceLayers
+          Template: Common-CloudFormationCustomResourceLayers
+        - Name: LayersSync
+          Type: Sync
+        - Name: AMIFunctions
+          Type: Stack
+          Stack: AMIFunctions
+          Template: Common-AMIFunctions
+        - Name: MarketplaceAMIFunctions
+          Type: Stack
+          Stack: MarketplaceAMIFunctions
+          Template: Common-MarketplaceAMIFunctions
+        - Name: PrivateAMIFunctions
+          Type: Stack
+          Stack: PrivateAMIFunctions
+          Template: Common-PrivateAMIFunctions
+        - Name: CIDRFunctions
+          Type: Stack
+          Stack: CIDRFunctions
+          Template: Common-CIDRFunctions
+        - Name: TagFunctions
+          Type: Stack
+          Stack: TagFunctions
+          Template: Common-TagFunctions
+        - Name: IdentifierFunctions
+          Type: Stack
+          Stack: IdentifierFunctions
+          Template: Common-IdentifierFunctions
+        - Name: CloudWatchEventDomainFunctions
+          Type: Stack
+          Stack: CloudWatchEventDomainFunctions
+          Template: Common-CloudWatchEventDomainFunctions
+        - Name: ScheduleFunctions
+          Type: Stack
+          Stack: ScheduleFunctions
+          Template: Common-ScheduleFunctions
+        - Name: DomainFunctions
+          Type: Stack
+          Stack: DomainFunctions
+          Template: Common-DomainFunctions
+        - Name: DirectoryFunctions
+          Type: Stack
+          Stack: DirectoryFunctions
+          Template: Common-DirectoryFunctions
+        - Name: MultiAccountFunctions
+          Type: Stack
+          Stack: MultiAccountFunctions
+          Template: Common-MultiAccountFunctions
+        - Name: FunctionsSync
+          Type: Sync
